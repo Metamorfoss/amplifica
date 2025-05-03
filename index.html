@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amplifica</title>
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="icon.png" type="image/png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" alt="Amplifica" /></div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#projeto">Sobre</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#funciona">Como Funciona</a>
+      <a href="https://dogomar.github.io/amplifica/" class="botao1" target="_blank" rel="noopener noreferrer">Experimente agora</a>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#inicio" onclick="toggleMenu()">Início</a>
+      <a href="#projeto" onclick="toggleMenu()">Sobre</a>
+      <a href="#equipe" onclick="toggleMenu()">Equipe</a>
+      <a href="#funciona" onclick="toggleMenu()">Como Funciona</a>
+      <a href="https://dogomar.github.io/amplifica/" class="botao1 mobile-btn" target="_blank" rel="noopener noreferrer" onclick="toggleMenu()">Experimente agora</a>
+    </div>
+  </header>
+
+  <section class="inicio" id="inicio">
+    <img src="amplifica.png" alt="Amplifica" id="amplifica">
+    <h1>Aprender começa com enxergar.</h1>
+    <p>Uma solução assistiva inovadora que transforma a experiência em sala de aula para estudantes com baixa visão.</p>
+  </section>
+
+  <section id="projeto">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Sobre o Amplifica</h2>
+        <p class="intro">Tecnologia elegante e eficaz para tornar o ambiente escolar verdadeiramente acessível e inclusivo.</p>
+      </div>
+      
+      <img src="ex2.jpeg" alt="Exemplo do Projeto" class="imagem-exemplo" />
+      
+      <div class="features-container">
+        <div class="feature">
+          <div class="feature-icon">🔍</div>
+          <h3>Ampliação em tempo real</h3>
+          <p>Zoom digital instantâneo para visualização cristalina do conteúdo da lousa.</p>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">✍️</div>
+          <h3>Transcrição automática</h3>
+          <p>Reconhecimento de texto avançado que converte o conteúdo em formato digital editável.</p>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-icon">📁</div>
+          <h3>Arquivos digitais</h3>
+          <p>Exportação em múltiplos formatos para revisão posterior e estudo.</p>
+        </div>
+      </div>
+
+      <div class="benefits">
+        <div class="section-header">
+          <h3>Por que escolher o Amplifica?</h3>
+        </div>
+        
+        <ul class="apple-list">
+          <li class="apple-list-item">
+            <div class="item-content">
+              <span class="item-icon">✔</span>
+              <span class="item-text">Acesso imediato ao conteúdo da lousa em tempo real</span>
+              
+            </div>
+          </li>
+          <li class="apple-list-item">
+            <div class="item-content">
+              <span class="item-icon">✔</span>
+              <span class="item-text">Redução significativa do esforço visual</span>
+              
+            </div>
+          </li>
+          <li class="apple-list-item">
+            <div class="item-content">
+              <span class="item-icon">✔</span>
+              <span class="item-text">Autonomia completa para o aluno</span>
+              
+            </div>
+          </li>
+          <li class="apple-list-item">
+            <div class="item-content">
+              <span class="item-icon">✔</span>
+              <span class="item-text">Solução prática e acessível</span>
+              
+            </div>
+          </li>
+          <li class="apple-list-item">
+            <div class="item-content">
+              <span class="item-icon">✔</span>
+              <span class="item-text">Interface intuitiva e fácil instalação</span>
+              
+            </div>
+          </li>
+        </ul>
+        
+        <div class="button-center">
+          <a href="https://dogomar.github.io/amplifica/" class="botao2" target="_blank" rel="noopener noreferrer">Experimente agora</a>
+        </div>
+      </div>
+  </section>
+
+  <section id="equipe">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 id="equip">Equipe</h2>
+      </div>
+      <div class="equipe-container">
+        <img src="nois.jpeg" alt="Equipe Metamorfos" class="imagem-equipe" />
+        <div class="descricao-equipe">
+          <p>
+            O <b>Amplifica</b> foi desenvolvido pela equipe <b>Metamorfos</b>, composta por estudantes do
+            <b>3º ano do curso técnico de Informática para Internet</b> da
+            <b>ETEC Darcy Pereira de Moraes</b>.
+          </p>
+
+          <p class="membros"><b>Membros:</b></p>
+          <ul>
+            <li><b>Dogomar</b></li>
+            <li><b>Livia</b></li>
+            <li><b>Rihanny</b></li>
+          </ul>
+          <br>
+          <p>
+            Nosso desenvolvimento foi baseado em <b>pesquisas de campo com educadores e alunos</b>
+            para entender profundamente os desafios enfrentados por estudantes com dificuldades visuais. 
+            O resultado é uma solução elegante e eficiente para <b>inclusão educacional</b>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="funciona">
+    <div class="section-container">
+      <div class="section-header">
+        <h2>Como Funciona</h2>
+        <p class="intro">Uma experiência perfeita em três passos simples.</p>
+      </div>
+      
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Conecte</h3>
+          <p>Posicione a webcam voltada para a lousa e conecte ao sistema</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Ajuste</h3>
+          <p>Configure o zoom e os parâmetros visuais conforme necessidade</p>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Utilize</h3>
+          <p>Acompanhe as aulas com clareza e exporte o conteúdo quando necessário</p>
+        </div>
+      </div>
+
+      <div class="funciona-imagens">
+        <img src="img1.jpeg" alt="Interface do Amplifica" />
+        <img src="img2.jpeg" alt="Amplifica em uso" />
+        <img src="img3.jpeg" alt="Detalhe do sistema" />
+      </div>
+
+      <div class="tutorial">
+        <div class="section-header">
+          <h3>Assista ao Tutorial</h3>
+          <p>Veja como transformar sua experiência em sala de aula</p>
+        </div>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/WdF44M6BRx4" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="accessibility-btn">
+    <button onclick="togglePanel()" aria-label="Abrir menu de acessibilidade">♿</button>
+    <div id="accessibility-options" class="hidden">
+      <label>
+        <input type="checkbox" onchange="toggleHighContrast()">
+        Alto Contraste
+      </label>
+      <label>
+        <input type="checkbox" onchange="toggleDyslexicFont()">
+        Fonte Disléxica
+      </label>
+      <label>
+        <input type="checkbox" onchange="toggleColorBlindMode('protanopia')">
+        Protanopia
+      </label>
+      <label>
+        <input type="checkbox" onchange="toggleColorBlindMode('deuteranopia')">
+        Deuteranopia
+      </label>
+      <label>
+        <input type="checkbox" onchange="toggleColorBlindMode('tritanopia')">
+        Tritanopia
+      </label>
+      <label>
+        <input type="checkbox" onchange="toggleColorBlindMode('achromatopsia')">
+        Acromatopsia
+      </label>
+      <div class="font-controls">
+        <span>Tamanho da Fonte:</span>
+        <div id="font-size-controls">
+          <button onclick="adjustFontSize('decrease')" aria-label="Diminuir fonte">-</button>
+          <span id="font-size-value">14px</span>
+          <button onclick="adjustFontSize('increase')" aria-label="Aumentar fonte">+</button>
+        </div>
+        <input type="range" min="12" max="28" value="14" step="2" 
+               oninput="adjustFontSize(parseInt(this.value))"
+               aria-label="Seletor de tamanho de fonte">
+      </div>
+      <button onclick="lerTexto()" aria-label="Ler conteúdo da página">
+        Ler Conteúdo
+      </button>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Amplifica - Metamorfos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
