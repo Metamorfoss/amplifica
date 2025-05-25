@@ -197,3 +197,68 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 });
+
+//negocio das perguntas
+// Substitua o código existente do FAQ por este:
+const toggleBtn = document.getElementById('toggleFaq');
+const faqContainer = document.getElementById('faqContainer');
+
+let isVisible = false;
+
+toggleBtn.addEventListener('click', () => {
+  if (!isVisible) {
+    faqContainer.classList.add('show');
+    toggleBtn.textContent = 'Fechar Perguntas Frequentes';
+    setTimeout(() => {
+      faqContainer.style.opacity = '1';
+    }, 10);
+  } else {
+    faqContainer.style.opacity = '0';
+    toggleBtn.textContent = 'Ver Perguntas Frequentes';
+    setTimeout(() => {
+      faqContainer.classList.remove('show');
+    }, 400);
+  }
+  isVisible = !isVisible;
+});
+
+// Animação dos acordeões
+const accordions = document.querySelectorAll('.accordion');
+accordions.forEach(acc => {
+  const question = acc.querySelector('.question');
+  
+  question.addEventListener('click', () => {
+   
+    if (!acc.classList.contains('open')) {
+      accordions.forEach(otherAcc => {
+        if (otherAcc !== acc && otherAcc.classList.contains('open')) {
+          otherAcc.classList.remove('open');
+        }
+      });
+    }
+    
+    
+    acc.classList.toggle('open');
+    
+    
+    if (acc.classList.contains('open')) {
+      setTimeout(() => {
+        acc.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 300);
+    }
+  });
+});
+
+
+document.querySelectorAll('a[href^="http"]').forEach(link => {
+  link.addEventListener('click', () => {
+    if (isVisible) {
+      faqContainer.style.opacity = '0';
+      toggleBtn.textContent = 'Ver Perguntas Frequentes';
+      setTimeout(() => {
+        faqContainer.classList.remove('show');
+      }, 400);
+      isVisible = false;
+    }
+  });
+});
