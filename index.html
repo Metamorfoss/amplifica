@@ -254,6 +254,7 @@
   <div id="accessibility-btn">
     <button onclick="togglePanel()" aria-label="Abrir menu de acessibilidade" style="background-image: url(acessível.jpg); background-size: cover; background-repeat: no-repeat; "> </button>
     <div id="accessibility-options" class="hidden">
+      <h3 id="accessibility-title" tabindex="-1">Opções de Acessibilidade</h3>
       <label>
         <input type="checkbox" onchange="toggleHighContrast()">
         Alto Contraste
@@ -262,7 +263,10 @@
         <input type="checkbox" onchange="toggleDyslexicFont()">
         Fonte Disléxica
       </label>
-      <label>
+
+      <fieldset class="accessibility-group">
+        <legend>Modos para Daltonismo:</legend>
+        <label>
         <input type="checkbox" onchange="toggleColorBlindMode('protanopia')">
         Protanopia
       </label>
@@ -278,7 +282,9 @@
         <input type="checkbox" onchange="toggleColorBlindMode('achromatopsia')">
         Acromatopsia
       </label>
-      <div class="font-controls">
+      </fieldset>
+      
+      <div class="font-controls accessibility-group">
         <span>Tamanho da Fonte:</span>
         <div id="font-size-controls">
           <button onclick="adjustFontSize('decrease')" aria-label="Diminuir fonte">-</button>
